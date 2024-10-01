@@ -1,0 +1,1 @@
+install(DIRECTORY pisilinux-2.4-wallpaper DESTINATION ${WALLPAPER_INSTALL_DIR})

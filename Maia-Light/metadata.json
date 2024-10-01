@@ -1,0 +1,19 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "mcder3@gmail.com",
+                "Name": "David Linares (Mcder3)"
+            }
+        ],
+        "Category": "",
+        "Description": "Maia Light for Plasma6",
+        "EnabledByDefault": true,
+        "Id": "Maia-Light",
+        "License": "LGPL",
+        "Name": "Maia Light",
+        "Version": "1.0",
+        "Website": "https://pisilinux.org"
+    },
+    "X-Plasma-API": "5.0"
+}
