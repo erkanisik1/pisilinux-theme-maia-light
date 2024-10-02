@@ -1,4 +1,4 @@
-project(Maia-Plasma6 NONE)
+project(pisilinux-theme-maia-light NONE)
 
 cmake_minimum_required(VERSION 2.8)
 # include specific modules
