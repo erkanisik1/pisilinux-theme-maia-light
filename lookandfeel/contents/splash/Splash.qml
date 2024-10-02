@@ -2,59 +2,35 @@ import QtQuick 2.15
 
 Image {
     id: root
-    source: "images/background.png"
-    fillMode: Image.PreserveAspectCrop
 
     property real stage: 0
 
+    source: "images/background.png"
+    fillMode: Image.PreserveAspectCrop
     onStageChanged: {
-        if (stage == 1) {
+        if (stage == 1)
             introAnimation.running = true;
-        }
-    }
 
-    RotationAnimator {
-        id: gearRotation
-        target: gear
-        from: 0
-        to: 360
-        loops: Animation.Infinite
-        duration: 5000
-        running: true
     }
 
     Image {
         id: gear
-        source: "images/gear2.svg"
+        AnimatedImage{
+            id: animation;
+            source: "images/pisi.gif"
+
+        }
         width: 100
         height: 100
+        transformOrigin: Item.Center
+
         anchors {
             horizontalCenter: parent.horizontalCenter
             bottom: parent.bottom
             bottomMargin: 50
         }
-
-        transformOrigin: Item.Center
-        transform: Rotation {
-            origin.x: gear.width / 2
-            origin.y: gear.height / 2
-            angle: -360 * stage / 6 
-        }
+        
     }
 
-    SequentialAnimation {
-        id: introAnimation
-        running: false
 
-        ParallelAnimation {
-            PropertyAnimation {
-                property: "stage"
-                target: root
-                to: 6
-                duration: 1000
-                easing.type: Easing.InOutBack
-                easing.overshoot: 1.0
-            }
-        }
-    }
 }

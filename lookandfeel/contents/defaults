@@ -25,5 +25,4 @@ name=Maia-Light
 Image=pisilinux-2.4-wallpaper
 
 [kwinrc][org.kde.kdecoration2]
-library=org.kde.kwin.aurorae
-theme=kwin4_decoration_qml_plastik
+library=org.kde.breeze
