@@ -30,7 +30,7 @@ plasma_install_package(lookandfeel maia-light look-and-feel lookandfeel)
 
 install(DIRECTORY lookandfeel/contents/loginmanager/ DESTINATION ${CMAKE_INSTALL_PREFIX}/share/sddm/themes/pisilinux PATTERN "README.txt" EXCLUDE)
 #install(DIRECTORY lookandfeel/contents/components DESTINATION ${CMAKE_INSTALL_PREFIX}/share/sddm/themes/Maia-Plasma6 PATTERN "README.txt" EXCLUDE)
-install(DIRECTORY lookandfeel/contents/cursors/ DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/maia-light PATTERN "README.txt" EXCLUDE)
+install(DIRECTORY lookandfeel/contents/cursors/ DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/maia-light-cursors PATTERN "README.txt" EXCLUDE)
 INSTALL(FILES colors/MaiaLight.colors DESTINATION ${DATA_INSTALL_DIR}/color-schemes/)
 
 if(EXISTS ${CMAKE_SOURCE_DIR}/po AND IS_DIRECTORY ${CMAKE_SOURCE_DIR}/po)
