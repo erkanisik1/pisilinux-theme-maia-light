@@ -5,7 +5,7 @@ ColorScheme=MaiaLight
 widgetStyle=breeze
 
 [kdeglobals][Icons]
-Theme=maia-light
+Theme=kora
 
 [kcminputrc][Mouse]
 cursorTheme=Mevlana
