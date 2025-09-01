@@ -5,7 +5,7 @@ Image {
 
     property real stage: 0
 
-    source: "images/background.png"
+    source: "images/background1.jpg"
     fillMode: Image.PreserveAspectCrop
     onStageChanged: {
         if (stage == 1)
