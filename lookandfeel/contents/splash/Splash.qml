@@ -5,7 +5,7 @@ Image {
 
     property real stage: 0
 
-    source: "images/background1.jpg"
+    source: "images/pisi.jpg"
     fillMode: Image.PreserveAspectCrop
     onStageChanged: {
         if (stage == 1)
@@ -17,7 +17,7 @@ Image {
         id: gear
         AnimatedImage{
             id: animation;
-            source: "images/pisi.gif"
+            source: "images/Pisi.gif"
 
         }
         width: 100
@@ -26,8 +26,9 @@ Image {
 
         anchors {
             horizontalCenter: parent.horizontalCenter
+            horizontalCenterOffset: -250 
             bottom: parent.bottom
-            bottomMargin: 50
+            bottomMargin: 250         
         }
         
     }
